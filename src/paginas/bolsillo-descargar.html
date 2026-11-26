@@ -1,0 +1,61 @@
+<!--{"ruta":"apps/bolsillo/descargar.html","titulo":"Descargar Bolsillo para Android · Fix Art","descripcion":"Descarga oficial de Bolsillo para Android, versión {{apk:version}}. Gratis y sin anuncios.","menu":"apps","favicon":"apps/bolsillo/img/icono.png","imagen":"apps/bolsillo/img/portada.webp"}-->
+<section class="encabezado-pagina puntos">
+  <div class="manchas"><i></i><i></i><i></i></div>
+  <div class="contenedor">
+    <p class="migas" data-revelar><a href="{{r}}index.html">Fix Art</a> › <a href="{{r}}apps/bolsillo/index.html">Bolsillo</a> › Descargar</p>
+    <h1 data-revelar style="--retraso:.06s">Descarga <span class="naranja">Bolsillo</span>.</h1>
+    <p class="lead" data-revelar style="--retraso:.12s">Descarga oficial para Android. Gratis, sin anuncios. Mientras llega a Google Play, puedes instalarla desde aquí.</p>
+  </div>
+</section>
+
+<section class="seccion">
+  <div class="contenedor dos-columnas" style="align-items:start">
+    <div data-revelar>
+      <div class="tarjeta" style="padding:34px">
+        <div style="display:flex;gap:18px;align-items:center;margin-bottom:6px">
+          <img src="{{r}}apps/bolsillo/img/icono.png" alt="" width="72" height="72" style="border-radius:18px">
+          <div><h3 style="margin:0">Bolsillo para Android</h3><p class="texto-2" style="margin:0">Versión {{apk:version}} · {{apk:fecha}}</p></div>
+        </div>
+        <dl class="ficha">
+          <div><dt>Tamaño</dt><dd>{{apk:peso}}</dd></div>
+          <div><dt>Requiere</dt><dd>{{apk:android}}</dd></div>
+          <div><dt>Precio</dt><dd>Gratis</dd></div>
+          <div><dt>Desarrollador</dt><dd>Fix Art · Ecuador</dd></div>
+        </dl>
+        <label style="display:flex;gap:12px;align-items:flex-start;margin:6px 0 18px;font-size:15.5px;color:var(--texto-2)">
+          <input type="checkbox" id="acepto" style="width:20px;height:20px;margin-top:3px;accent-color:#fca311">
+          <span>He leído la <a href="{{r}}apps/bolsillo/privacidad.html">Política de privacidad</a> y los <a href="{{r}}apps/bolsillo/terminos.html">Términos y condiciones</a>. Dentro de la app volveré a aceptarlos.</span>
+        </label>
+        <a class="boton boton-naranja" id="boton-descarga" href="{{apk:enlace}}" rel="noopener" aria-disabled="true" style="width:100%;justify-content:center">{{i:descargar}} Descargar Bolsillo {{apk:version}}</a>
+        <p class="texto-2" style="font-size:14px;margin:12px 0 0;text-align:center">La descarga se hace desde Google Drive. Si Drive avisa que no puede analizar el archivo por su tamaño, toca <strong>“Descargar de todos modos”</strong>. ¿No funciona? <a href="{{apk:enlaceDrive}}" target="_blank" rel="noopener">Ábrelo en Drive</a>.</p>
+      </div>
+      <h3 style="margin-top:34px">Verifica que sea el archivo oficial</h3>
+      <p class="texto-2">Descarga Bolsillo solo desde esta página. Si quieres comprobar que el archivo no fue alterado, su huella SHA-256 debe ser:</p>
+      <p class="huella" id="huella">{{apk:sha256}}</p>
+      <button class="boton boton-borde" data-copiar="#huella" style="padding:10px 16px;font-size:14px">Copiar huella</button>
+    </div>
+
+    <div data-revelar style="--retraso:.1s">
+      <h2 style="font-size:30px">Cómo instalarla</h2>
+      <ol class="pasos-claros">
+        <li>Toca <strong>Descargar</strong> desde tu celular Android.</li>
+        <li>Abre el archivo descargado <strong>Bolsillo-{{apk:version}}.apk</strong>.</li>
+        <li>Si Android lo pide, permite <strong>“Instalar apps desconocidas”</strong> para tu navegador o administrador de archivos. Puedes volver a desactivarlo después.</li>
+        <li>Si aparece <strong>Google Play Protect</strong>, elige <strong>“Instalar de todas formas”</strong>: sale porque la app aún no está en Google Play.</li>
+        <li>Abre Bolsillo, lee y acepta los términos, y entra con tu cuenta de Google o tu correo.</li>
+      </ol>
+      <div class="aviso" style="margin-top:26px">{{i:alerta}}<div><strong>¿Ya tenías una versión anterior?</strong><br>Si Android dice que no puede actualizar, desinstala la versión anterior e instala esta. Tus datos están guardados en tu cuenta y vuelven al entrar.</div></div>
+      <div class="aviso" style="margin-top:14px;background:rgba(20,33,61,.05);border-color:rgba(20,33,61,.12);color:var(--texto-2)">{{i:escudo}}<div>Bolsillo no te pide claves bancarias, no se conecta con tu banco y no mueve dinero. Si alguien te ofrece una “versión” distinta por otro medio, no la instales.</div></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // El botón se activa al marcar que leíste la privacidad y los términos.
+  (() => {
+    const c = document.getElementById('acepto');
+    const b = document.getElementById('boton-descarga');
+    const act = () => b.setAttribute('aria-disabled', c.checked ? 'false' : 'true');
+    c.addEventListener('change', act); act();
+  })();
+</script>

@@ -1,0 +1,86 @@
+<!--{"ruta":"apps/bolsillo/index.html","titulo":"Bolsillo · Finanzas personales en dos toques · Fix Art","descripcion":"Bolsillo es la app gratuita de finanzas personales de Fix Art: registra gastos e ingresos, arma presupuestos y alcanza tus metas de ahorro.","menu":"apps","favicon":"apps/bolsillo/img/icono.png","imagen":"apps/bolsillo/img/portada.webp"}-->
+<section class="portada puntos">
+  <div class="manchas"><i></i><i></i><i></i></div>
+  <div class="contenedor">
+    <div>
+      <p class="migas" data-revelar><a href="{{r}}index.html">Fix Art</a> › <a href="{{r}}apps.html">Apps</a> › Bolsillo</p>
+      <h1 data-revelar style="--retraso:.06s">Tus finanzas <span class="naranja">en dos toques</span>.</h1>
+      <p class="lead" data-revelar style="--retraso:.12s">¿Sabes a dónde se fue tu dinero este mes? Con Bolsillo lo sabes: toca una categoría, escribe el monto y listo. Efectivo, bancos, tarjetas y ahorros en un solo lugar.</p>
+      <div class="acciones" data-revelar style="--retraso:.18s">
+        <a class="boton boton-naranja" href="{{r}}apps/bolsillo/descargar.html">{{i:descargar}} Descargar para Android</a>
+        <a class="boton boton-vidrio" href="#funciones">Ver funciones</a>
+      </div>
+      <div class="insignias" data-revelar style="--retraso:.24s"><span>Gratis</span><span>Sin anuncios</span><span>Versión {{apk:version}}</span><span>{{apk:android}}</span></div>
+    </div>
+    <!-- Escena animada: monedas que caen a la billetera -->
+    <div class="escena-bolsillo" aria-hidden="true" data-revelar style="--retraso:.15s">
+      <div class="halo"></div>
+      <img class="moneda" src="{{r}}apps/bolsillo/img/bolsillo-moneda.svg" alt="">
+      <img class="moneda" src="{{r}}apps/bolsillo/img/bolsillo-moneda.svg" alt="">
+      <img class="moneda" src="{{r}}apps/bolsillo/img/bolsillo-moneda.svg" alt="">
+      <svg class="billetera" viewBox="20 20 210 210">
+        <g stroke="#FCA311" stroke-width="11" stroke-linejoin="round" fill="#1C2D52">
+          <rect x="62" y="84" width="98" height="44" rx="14"/>
+          <rect x="54" y="108" width="132" height="88" rx="18"/>
+          <rect x="146" y="134" width="50" height="36" rx="18"/>
+        </g>
+        <circle cx="165" cy="152" r="5.5" fill="#FCA311"/>
+      </svg>
+    </div>
+  </div>
+  <svg class="ola" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 44C240 70 480 72 720 50S1200 18 1440 34V70H0Z"/></svg>
+</section>
+
+<section class="seccion" id="funciones">
+  <div class="contenedor">
+    <div class="encabezado-seccion" data-revelar>
+      <span class="etiqueta">Funciones</span>
+      <h2>Simple por fuera, <span class="naranja">completa por dentro</span>.</h2>
+    </div>
+    <div class="rejilla rejilla-4">
+      <div class="tarjeta" data-revelar><div class="icono">{{i:mas}}</div><h3>Registra en segundos</h3><p>Gastos, ingresos y transferencias con categoría, cuenta, nota y etiquetas.</p></div>
+      <div class="tarjeta" data-revelar style="--retraso:.06s"><div class="icono">{{i:tarjetas}}</div><h3>Todas tus cuentas</h3><p>Efectivo, bancos, tarjetas y ahorros, cada una con su saldo al día.</p></div>
+      <div class="tarjeta" data-revelar style="--retraso:.12s"><div class="icono">{{i:pastel}}</div><h3>Presupuestos</h3><p>Pon un límite mensual por categoría y mira cuánto te queda.</p></div>
+      <div class="tarjeta" data-revelar style="--retraso:.18s"><div class="icono">{{i:meta}}</div><h3>Metas de ahorro</h3><p>Ahorra para la moto, el viaje o lo que quieras, y mira tu avance.</p></div>
+      <div class="tarjeta" data-revelar><div class="icono">{{i:repetir}}</div><h3>Pagos recurrentes</h3><p>Arriendo, plan del celular o suscripciones se registran solos cada mes.</p></div>
+      <div class="tarjeta" data-revelar style="--retraso:.06s"><div class="icono">{{i:grafico}}</div><h3>Reportes claros</h3><p>Ve en qué gastas más con gráficos fáciles de entender.</p></div>
+      <div class="tarjeta" data-revelar style="--retraso:.12s"><div class="icono">{{i:nube}}</div><h3>En todos tus teléfonos</h3><p>Entra con Google y tus datos se sincronizan. También funciona sin internet.</p></div>
+      <div class="tarjeta" data-revelar style="--retraso:.18s"><div class="icono">{{i:candado}}</div><h3>Privada y segura</h3><p>Solo tú ves tus datos. No pedimos claves bancarias ni nos conectamos con tu banco.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion seccion-blanca">
+  <div class="contenedor dos-columnas">
+    <div data-revelar>
+      <span class="etiqueta">Tus datos, tus reglas</span>
+      <h2>Privacidad <span class="naranja">sin letra chiquita</span>.</h2>
+      <ul class="lista-check">
+        <li>No vendemos tus datos ni mostramos anuncios de terceros.</li>
+        <li>Antes de usar la app aceptas la política de privacidad y los términos; la casilla de publicidad es opcional.</li>
+        <li>Puedes exportar tus movimientos o eliminar tu cuenta cuando quieras.</li>
+        <li>Cumplimos la Ley Orgánica de Protección de Datos Personales del Ecuador.</li>
+      </ul>
+      <p style="margin-top:24px;display:flex;flex-wrap:wrap;gap:12px">
+        <a class="boton boton-borde" href="{{r}}apps/bolsillo/privacidad.html">Política de privacidad</a>
+        <a class="boton boton-borde" href="{{r}}apps/bolsillo/terminos.html">Términos</a>
+        <a class="boton boton-borde" href="{{r}}apps/bolsillo/eliminar-cuenta.html">Eliminar cuenta</a>
+      </p>
+    </div>
+    <img src="{{r}}apps/bolsillo/img/portada.webp" alt="Bolsillo, finanzas personales en dos toques. Una app de Fix Art." width="360" height="640" style="justify-self:center;width:min(300px,80%);border-radius:30px;box-shadow:var(--sombra)" data-revelar>
+  </div>
+</section>
+
+<section class="seccion">
+  <div class="contenedor">
+    <div class="cta puntos" data-revelar>
+      <div class="manchas"><i></i><i></i></div>
+      <h2>Empieza a ordenar tu dinero <span class="naranja">hoy</span>.</h2>
+      <p>Gratis, sin anuncios y en español. ¿Dudas? Escríbenos por WhatsApp.</p>
+      <div class="acciones">
+        <a class="boton boton-naranja" href="{{r}}apps/bolsillo/descargar.html">{{i:descargar}} Descargar Bolsillo</a>
+        <a class="boton boton-vidrio" href="https://wa.me/{{c:whatsapp}}?text=Hola%20Fix%20Art%2C%20tengo%20una%20consulta%20sobre%20Bolsillo" target="_blank" rel="noopener">{{i:whatsapp}} Soporte</a>
+      </div>
+    </div>
+  </div>
+</section>
